@@ -176,10 +176,10 @@ public class SnakeActivity extends AppCompatActivity implements SensorEventListe
                     scorePlayer = snakeBodyPositions.size();
                     snakeBodyPositions.clear();
                     ll_param.setVisibility(View.INVISIBLE);
-                    GVsnake.setVisiblitiy(View.INVISIBLE);
+                    myGV.setVisibility(View.INVISIBLE);
                     iv_message.setVisibility(View.VISIBLE);
                     try {
-                        Thread.sleep(2000);
+                        Thread.sleep(3000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
