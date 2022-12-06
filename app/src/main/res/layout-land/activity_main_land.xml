@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:screenOrientation="portrait"
+    android:background="@color/black"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/iv_game_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_over"/>
+
+    <GridView
+        android:id="@+id/GVsnake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/GV_margin_top"
+        android:background="@color/black"
+        android:horizontalSpacing="@dimen/GV_horiz_spacing"
+        android:verticalSpacing="@dimen/GV_verti_spacing"
+        android:numColumns="32">
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/ll_param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LL_haut_haut_height"
+            android:background="@color/black"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/tv_playerName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/TV_game_over_margin_start"
+                android:textAlignment="textEnd"
+                android:text="@string/name_player"
+                android:textColor="@color/white"
+                android:textSize="@dimen/TV_textSize"
+                tools:ignore="MissingConstraints" />
+
+            <Space
+                android:layout_width="@dimen/SP_space_value"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/score"
+                android:layout_gravity="center"
+                android:textSize="@dimen/TV_textSize"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LL_middle_width"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/LL_bord_gauche_width"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <Space
+                android:layout_width="@dimen/SP_space_value"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/LL_bord_droit_width"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LL_bord_bas_height"
+            android:background="@color/black">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

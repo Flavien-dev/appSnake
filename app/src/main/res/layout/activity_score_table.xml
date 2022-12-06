@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_score_player"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:dividerHeight="1dp"
+            android:layout_margin="30dp"
+            android:background="@color/primaryOrange"/>
+
+        <Button
+            android:id="@+id/bt_rejouer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textSize="@dimen/BT_text_size"
+            android:text="@string/rejouer" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

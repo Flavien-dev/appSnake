@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.appSnake" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="boxStrokeColor">@color/primaryOrange</item>
+        <item name="hintTextColor">@color/primaryOrange</item>
+        <item name="android:textColor">@color/primaryOrange</item>
+        <item name="android:color">@color/primaryOrange</item>
+        <item name="android:strokeColor">@color/primaryOrange</item>
+        <item name="android:textColorHint">@color/primaryOrange</item>
+        <item name="android:textColorHintInverse">@color/primaryOrange</item>
+        <item name="android:cacheColorHint">@color/primaryOrange</item>
+        <item name="textAppearanceCaption">@style/TextApparence.snake.edittext</item>
+    </style>
+
+    <style name="widget.snake.textfield" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textSize">20sp</item>
+        <item name="boxStrokeColor">@color/primaryOrange</item>
+        <item name="android:textColor">@color/primaryOrange</item>
+        <item name="android:strokeColor">@color/primaryOrange</item>
+        <item name="android:color">@color/primaryOrange</item>
+        <item name="android:textAppearance">@style/TextApparence.snake.edittext</item>
+    </style>
+
+    <style name="TextApparence.snake.primary" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextApparence.snake.edittext" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryOrange</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appSnake</string>
+    <string name="jouer">Jouer</string>
+    <string name="name_player">name_player</string>
+    <string name="score">Score : 1</string>
+    <string name="rejouer">Rejouer</string>
+    <string name="nom_joueur">Nom du joueur</string>
+</resources>
